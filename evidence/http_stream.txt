@@ -1,0 +1,37 @@
+
+===================================================================
+Follow: tcp,ascii
+Filter: tcp.stream eq 0
+Node 0: [<VM-IPv6>]:54488
+Node 1: [2606:4700:99e5:72db:f29e:4c4:ef6b:ff98]:80
+75
+GET / HTTP/1.1
+Host: example.com
+User-Agent: curl/8.21.0
+Accept: */*
+
+
+	931
+HTTP/1.1 200 OK
+Date: Sun, 11 Oct 2026 04:54:13 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: cloudflare
+Last-Modified: Fri, 09 Oct 2026 20:19:47 GMT
+Allow: GET, HEAD
+Accept-Ranges: bytes
+Age: 2255
+cf-cache-status: HIT
+CF-RAY: a48b43fe1ab27a25-PAT
+alt-svc: h3=":443"; ma=86400
+
+241
+<!doctype html><html lang=en><head><meta charset=utf-8><link rel=icon href=data:,><meta name=viewport content="width=device-width,initial-scale=1"><title>Example Domain</title><style>html{color-scheme:light dark;background:light-dark(#eee,#222)}body{font:16px/1.6 system-ui,sans-serif;max-width:26em;margin:auto;padding:25vh 2em 2em;text-align:center}</style></head><body><p>This domain is for use in documentation examples without needing permission. This is not a service; avoid relying on it for testing and monitoring purposes.</p><script src=/s.js></script></body></html>
+
+
+	5
+0
+
+
+===================================================================
